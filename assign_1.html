@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fas fa-chart-line"></i>
+            Finance
+        </div>
+        <nav>
+            <div class="nav-section">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                    <i class="fa-solid fa-caret-up"></i>
+                </a>
+                <a href="#" class="nav-item sub-nav-item">Classic</a>
+                <a href="#" class="nav-item sub-nav-item">Minimal</a>
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-file"></i>
+                    Pages
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-th-large"></i>
+                    Applications
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    UI Component
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-grip-horizontal"></i>
+                    Widgets
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-comment"></i>
+                    Forms
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+            <div class="nav-section">
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    Charts
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <input type="search" placeholder="Search here..." class="search-bar">
+            <div class="header-right">
+                <div class="icon-wrapper">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="fas fa-comment"></i>
+                    <span class="notification-dot"></span>
+                </div>
+                <div class="profile-pic">
+                    <img src="new_img.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </header>
+
+        <!-- 4 Cards -->
+        <div class="card-grid">
+            <div class="card card-blue">
+                <h3>Total Income</h3>
+                <div class="amount">$579,000</div>
+                <div class="saved">Saved 25%</div>
+            </div>
+            <div class="card card-light-blue">
+                <h3>Total Expenses</h3>
+                <div class="amount">$79,000</div>
+                <div class="saved">Saved 25%</div>
+            </div>
+            <div class="card card-purple">
+                <h3>Cash on Hand</h3>
+                <div class="amount">$92,000</div>
+                <div class="saved">Saved 25%</div>
+            </div>
+            <div class="card card-mint">
+                <h3>Net Profit Margin</h3>
+                <div class="amount">$179,000</div>
+                <div class="saved">Saved 65%</div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <!-- AP and AR Balance Chart -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <div>
+                        <h3 class="chart-title">AP and AR Balance</h3>
+                        <div class="chart-subtitle">Avg. $5,309</div>
+                    </div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="dropdown-btn">
+                            Monthly
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <button class="dropdown-btn">
+                            Last Year
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="chart">
+                    <!-- Y-axis labels -->
+                    <div class="y-axis-labels left">
+                        <div class="y-label">800</div>
+                        <div class="y-label">600</div>
+                        <div class="y-label">400</div>
+                        <div class="y-label">200</div>
+                        <div class="y-label">0</div>
+                    </div>
+                    
+                    <div class="y-axis-labels right">
+                        <div class="y-label">50</div>
+                        <div class="y-label">40</div>
+                        <div class="y-label">30</div>
+                        <div class="y-label">20</div>
+                        <div class="y-label">10</div>
+                    </div>
+
+                    <!-- Grid lines -->
+                    <div class="grid-lines">
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                    </div>
+
+                    <!-- Bars -->
+                    <div class="bars">
+                        <div class="bar" style="height: 52.5%;"><div class="bar-label">Jan'01</div></div>
+                        <div class="bar" style="height: 62.5%;"><div class="bar-label"></div></div>
+                        <div class="bar" style="height: 50%;"><div class="bar-label">03 Jan</div></div>
+                        <div class="bar" style="height: 81.25%;"><div class="bar-label"></div></div>
+                        <div class="bar" style="height: 93.75%;"><div class="bar-label">05 Jan</div></div>
+                        <div class="bar" style="height: 45%;"><div class="bar-label"></div></div>
+                        <div class="bar" style="height: 67.5%;"><div class="bar-label">07 Jan</div></div>
+                        <div class="bar" style="height: 72.5%;"><div class="bar-label"></div></div>
+                        <div class="bar" style="height: 58.75%;"><div class="bar-label">09 Jan</div></div>
+                        <div class="bar" style="height: 83.75%;"><div class="bar-label"></div></div>
+                        <div class="bar" style="height: 77.5%;"><div class="bar-label">11 Jan</div></div>
+                        
+                    </div>
+
+                    <!-- Line Chart -->
+                    <svg class="line-chart">
+                        <polyline
+                            points="20,190 60,150 100,200 140,75 180,25 220,220 260,120 300,100 340,160 380,65 420,90 460,310"
+                            fill="none"
+                            stroke="#9c6ade"
+                            stroke-width="2"
+                        />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Budget Reports -->
+            <div class="charts-right">
+                <!-- Income Budget -->
+                <div class="budget-report">
+                    <h3 class="chart-title">% of Income Budget</h3>
+                    <div class="budget-circle-container">
+                        <svg class="budget-circle" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#4169e1"/>
+                                    <stop offset="100%" style="stop-color:#63d2a7"/>
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle-bg" cx="50" cy="50" r="44"/>
+                            <circle class="circle-progress" cx="50" cy="50" r="44" 
+                                    stroke="url(#gradient1)"
+                                    stroke-dasharray="184.5 276.75"/>
+                        </svg>
+                        <div class="circle-text">
+                            <div class="circle-label">67%</div>
+                            <div class="circle-sublabel">Budget</div>
+                        </div>
+                    </div>
+                    <div class="budget-details">
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-dot" style="background: #4169e1;"></div>
+                                <span class="budget-label">Balance</span>
+                            </div>
+                            <span class="budget-amount">-$18,570</span>
+                        </div>
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-dot" style="background: #63d2a7;"></div>
+                                <span class="budget-label">Balance</span>
+                            </div>
+                            <span class="budget-amount">$31,430</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="view-report">View Full Report</a>
+                </div>
+
+                <!-- Expenses Budget -->
+                <div class="budget-report">
+                    <h3 class="chart-title">% of Expenses Budget</h3>
+                    <div class="budget-circle-container">
+                        <svg class="budget-circle" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#4169e1"/>
+                                    <stop offset="100%" style="stop-color:#63d2a7"/>
+                                </linearGradient>
+                            </defs>
+                            <circle class="circle-bg" cx="50" cy="50" r="44"/>
+                            <circle class="circle-progress" cx="50" cy="50" r="44" 
+                                    stroke="url(#gradient2)"
+                                    stroke-dasharray="132.84 276.75"/>
+                        </svg>
+                        <div class="circle-text">
+                            <div class="circle-label">48%</div>
+                            <div class="circle-sublabel">Profit</div>
+                        </div>
+                    </div>
+                    <div class="budget-details">
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-dot" style="background: #4169e1;"></div>
+                                <span class="budget-label">Balance</span>
+                            </div>
+                            <span class="budget-amount">-$18,570</span>
+                        </div>
+                        <div class="budget-item">
+                            <div class="budget-item-header">
+                                <div class="budget-dot" style="background: #63d2a7;"></div>
+                                <span class="budget-label">Balance</span>
+                            </div>
+                            <span class="budget-amount">$31,430</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="#" class="view-report">View Full Report</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
+
